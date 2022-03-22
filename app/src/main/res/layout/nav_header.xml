@@ -3,34 +3,42 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginTop="5dp"
-    android:layout_marginStart="16dp"
-    android:background="@color/white">
-
-    <ImageView
-        android:id="@+id/profile_Image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher" />
-
-    <TextView
+    android:background="@color/grey">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/user_name"
-        android:paddingTop="8dp"
-        android:textSize="20dp"
-        android:text="Japheth Nyaranga"
-        android:textColor="@color/black"
-        android:textStyle="bold"  />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="nyaranga4@gmail.com"  />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:layout_marginTop="5dp" />
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:id="@+id/profile_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:paddingTop="8dp"
+            android:textSize="20dp"
+            android:text="Japheth Nyaranga"
+            android:textColor="@color/white"
+            android:textStyle="bold"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="nyaranga4@gmail.com"  />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+
 
 
 
