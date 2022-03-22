@@ -11,7 +11,7 @@
         <entry key="app/src/main/res/layout/fragment_all_news.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/fragment_search_news.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/fragment_top_news.xml" value="0.18177083333333333" />
-        <entry key="app/src/main/res/layout/individual_item_news.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/individual_item_news.xml" value="0.33" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.35625" />
         <entry key="app/src/main/res/menu/drawer_nav_menu.xml" value="0.35625" />
         <entry key="app/src/main/res/menu/news_bottom_navigation.xml" value="0.35625" />
