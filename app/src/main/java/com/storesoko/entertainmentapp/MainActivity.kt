@@ -1,5 +1,6 @@
 package com.storesoko.entertainmentapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -7,6 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.storesoko.entertainmentapp.Movies.Ui.MoviesActivity
+import com.storesoko.entertainmentapp.News.UI.NewsActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var toggle:ActionBarDrawerToggle
@@ -26,8 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.get_news-> Toast.makeText(applicationContext, "clicked get name", Toast.LENGTH_SHORT).show()
-                R.id.get_movies -> Toast.makeText(applicationContext, "clicked get name", Toast.LENGTH_SHORT).show()
+                R.id.get_news-> startActivity(Intent(applicationContext,NewsActivity::class.java))
+                R.id.get_movies -> startActivity(Intent(applicationContext, MoviesActivity::class.java))
                 R.id.get_age -> Toast.makeText(applicationContext, "clicked get name", Toast.LENGTH_SHORT).show()
             }
 
