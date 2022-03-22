@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <item android:id="@+id/allNewsFragment"
+        android:title="All News"
+        android:icon="@drawable/news_home"/>
+
+
+    <item android:id="@+id/topNewsFragment"
+        android:title="Top News"
+        android:icon="@drawable/news_top_news"/>
+
+    <item android:id="@+id/searchNewsFragment"
+        android:title="Serch News"
+        android:icon="@drawable/news_search"/>
+
+
 </menu>

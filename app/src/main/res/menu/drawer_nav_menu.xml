@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/get_news"
-        android:title="GET NEWS" />
+        android:title="GET NEWS"
+        android:icon="@drawable/news_top_news"/>
 
 
     <item android:id="@+id/get_movies"
-        android:title="GET MOVIES" />
+        android:title="GET MOVIES"
+        android:icon="@drawable/get_movies"/>
 
 
     <item android:id="@+id/get_age"
-        android:title="GET AGE PREDICRION" />
+        android:title="GET AGE PREDICRION"
+        android:icon="@drawable/age_prediction"/>
 
    <item android:title="PROFILE">
        <menu>
            <item
                android:id="@+id/nav_login"
-               android:title="My Profile"  />
+               android:title="My Profile"
+               android:icon="@drawable/my_profile"  />
        </menu>
    </item>
 
@@ -23,10 +27,12 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:title="Share App" />
+                android:title="Share App"
+                android:icon="@drawable/ic_baseline_share_24"/>
             <item
                 android:id="@+id/nav_rate"
-                android:title="Rate App" />
+                android:title="Rate App"
+                android:icon="@drawable/rate"/>
         </menu>
 
 
@@ -35,7 +41,8 @@
         <menu>
             <item
                 android:id="@+id/logout"
-                android:title="Logout" />
+                android:title="Logout"
+                android:icon="@drawable/logout"/>
 
         </menu>
 

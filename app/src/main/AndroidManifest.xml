@@ -10,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EntertainmentApp">
         <activity
-            android:name=".Age.Ui.AgeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Movies.Ui.MoviesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Movies"
-            android:exported="false" />
-        <activity
-            android:name=".News.UI.NewsActivity"
-            android:exported="false" />
-        <activity
             android:name=".News.Ui.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Age.Ui.AgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Movies.Ui.MoviesActivity"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>
