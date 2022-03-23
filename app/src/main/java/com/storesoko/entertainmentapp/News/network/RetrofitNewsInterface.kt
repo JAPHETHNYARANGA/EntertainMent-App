@@ -11,4 +11,8 @@ interface RetrofitNewsInterface {
 
     @GET("top-headlines")
     fun getTopHeadlinesDataFromApi(@Query("country")country:String, @Query("apiKey")apiKey:String):Call<newsModel>
+
+    @GET("everything")
+    fun getSearchDataFromApi(@Query("q") query:String,@Query("apiKey")apiKey:String) :Call<newsModel>
+
 }
