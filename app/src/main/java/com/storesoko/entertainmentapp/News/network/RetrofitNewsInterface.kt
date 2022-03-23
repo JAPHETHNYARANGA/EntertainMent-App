@@ -8,4 +8,7 @@ import retrofit2.http.Query
 interface RetrofitNewsInterface {
     @GET("everything")
     fun getNewsDataFromApi(@Query("domains")domains:String,@Query("apiKey")apiKey:String):Call<newsModel>
+
+    @GET("top-headlines")
+    fun getTopHeadlinesDataFromApi(@Query("country")country:String, @Query("apiKey")apiKey:String):Call<newsModel>
 }

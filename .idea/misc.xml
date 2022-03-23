@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.35625" />
         <entry key="app/src/main/res/menu/drawer_nav_menu.xml" value="0.35625" />
         <entry key="app/src/main/res/menu/news_bottom_navigation.xml" value="0.35625" />
+        <entry key="app/src/main/res/menu/topnews.xml" value="0.35625" />
       </map>
     </option>
   </component>

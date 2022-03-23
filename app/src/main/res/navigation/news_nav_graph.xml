@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/allNewsFragment"
         android:name="com.storesoko.entertainmentapp.News.Ui.fragments.AllNewsFragment"
-        android:label="fragment_all_news"
+        android:label="All News"
         tools:layout="@layout/fragment_all_news" />
     <fragment
         android:id="@+id/topNewsFragment"
         android:name="com.storesoko.entertainmentapp.News.Ui.fragments.TopNewsFragment"
-        android:label="fragment_top_news"
+        android:label="Top News"
         tools:layout="@layout/fragment_top_news" />
     <fragment
         android:id="@+id/searchNewsFragment"
         android:name="com.storesoko.entertainmentapp.News.Ui.fragments.SearchNewsFragment"
-        android:label="fragment_search_news"
+        android:label="Search News"
         tools:layout="@layout/fragment_search_news" />
 </navigation>
