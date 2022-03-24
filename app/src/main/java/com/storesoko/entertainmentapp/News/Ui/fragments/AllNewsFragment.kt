@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.storesoko.entertainmentapp.News.Models.Article
 import com.storesoko.entertainmentapp.News.adapter.allNewsAdapter
@@ -38,6 +39,8 @@ class AllNewsFragment : Fragment() {
         val recyclerView = view.allNewsRecycler
 
         recyclerView.layoutManager = LinearLayoutManager(activity)
+      //  recyclerView.layoutManager= GridLayoutManager(activity)
+
 
         val decoration = DividerItemDecoration(activity, DividerItemDecoration.VERTICAL)
         recyclerView.addItemDecoration(decoration)
@@ -47,6 +50,8 @@ class AllNewsFragment : Fragment() {
         recyclerView.adapter = newsRecyclerAdapter
 
     }
+
+
 
     private fun getViewModel(){
         val viewModel = ViewModelProvider(this).get(allNewsViewModel::class.java)
