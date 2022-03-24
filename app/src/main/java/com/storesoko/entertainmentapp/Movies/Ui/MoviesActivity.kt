@@ -6,10 +6,13 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.storesoko.entertainmentapp.Age.Ui.AgeActivity
 import com.storesoko.entertainmentapp.News.Ui.MainActivity
 import com.storesoko.entertainmentapp.R
+import kotlinx.android.synthetic.main.activity_movies.*
 
 class MoviesActivity : AppCompatActivity() {
     private lateinit var toggle: ActionBarDrawerToggle
@@ -38,6 +41,9 @@ class MoviesActivity : AppCompatActivity() {
             true
         }
 
+        //bottom Navigation
+
+        moviesbottonNavigationView.setupWithNavController(moviesNavHostFragment.findNavController())
 
     }
 

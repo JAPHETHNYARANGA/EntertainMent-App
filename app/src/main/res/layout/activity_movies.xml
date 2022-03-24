@@ -7,16 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".Movies.Ui.MoviesActivity">
 
-   <RelativeLayout
+   <androidx.constraintlayout.widget.ConstraintLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-   android:text="Movies Activity"  />
 
-   </RelativeLayout>
+      <FrameLayout
+          android:id="@+id/moviesFragment"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          app:layout_constraintBottom_toTopOf="@+id/moviesbottonNavigationView"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+         <fragment
+             android:id="@+id/moviesNavHostFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:name="androidx.navigation.fragment.NavHostFragment"
+             app:defaultNavHost = "true"
+             app:navGraph = "@navigation/movies_nav_graph"  />
+
+
+      </FrameLayout>
+
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/moviesbottonNavigationView"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:menu="@menu/movies_bottom_navigation"  />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
 
 
    <com.google.android.material.navigation.NavigationView
