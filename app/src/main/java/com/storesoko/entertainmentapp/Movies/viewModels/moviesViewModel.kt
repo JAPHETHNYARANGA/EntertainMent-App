@@ -27,11 +27,15 @@ class moviesViewModel {
 
         allMoviesCall.enqueue(object : Callback<moviesModel>{
             override fun onResponse(call: Call<moviesModel>, response: Response<moviesModel>) {
-                TODO("Not yet implemented")
+                if(response.isSuccessful){
+                    allMoviesListData.postValue(response.body())
+                }else{
+                    allMoviesListData.postValue(null)
+                }
             }
 
             override fun onFailure(call: Call<moviesModel>, t: Throwable) {
-                TODO("Not yet implemented")
+                allMoviesListData.postValue(null)
             }
         })
     }
