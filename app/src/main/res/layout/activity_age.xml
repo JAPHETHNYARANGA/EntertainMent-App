@@ -7,11 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".Age.Ui.AgeActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Age layout"
-        android:gravity="center" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+</RelativeLayout>
 
 
     <com.google.android.material.navigation.NavigationView

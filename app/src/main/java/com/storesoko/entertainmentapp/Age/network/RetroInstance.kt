@@ -1,15 +1,15 @@
-package com.storesoko.entertainmentapp.Movies.network
+package com.storesoko.entertainmentapp.Age.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetroMoviesInstance {
+class RetroInstance {
     companion object{
-        val MOVIE_BASE_URL = "https://api.themoviedb.org/3/"
+        val BASE_URL = "https://datausa.io/api/"
 
-        fun getMoviesRetroInstance():Retrofit{
+        fun getRetroInstance(): Retrofit{
             return Retrofit.Builder()
-                .baseUrl(MOVIE_BASE_URL)
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
