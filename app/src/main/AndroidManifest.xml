@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EntertainmentApp">
         <activity
+           android:theme="@style/NoNav"
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
