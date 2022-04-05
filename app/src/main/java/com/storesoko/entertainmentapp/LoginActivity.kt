@@ -78,6 +78,7 @@ class LoginActivity : AppCompatActivity() {
                     val user = auth.currentUser
                     if(user !=null){
                         startActivity(Intent(applicationContext,MainActivity::class.java))
+                        finish()
                     }
                 } else {
                     // If sign in fails, display a message to the user.
@@ -103,6 +104,7 @@ class LoginActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if(currentUser != null){
             startActivity(Intent(applicationContext, MainActivity::class.java ))
+            finish()
         }else{
             Snackbar.make(loginLayout, "Please Login to continue",Snackbar.LENGTH_SHORT).show()
         }
