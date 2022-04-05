@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
 
-        sign_in_button.setSize(SignInButton.SIZE_STANDARD);
+        sign_in_button.setSize(SignInButton.SIZE_WIDE);
         sign_in_button.setOnClickListener {
             signIn()
         }
