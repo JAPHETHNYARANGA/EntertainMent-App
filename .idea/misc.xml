@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/logout.xml" value="0.2905" />
+        <entry key="app/src/main/res/drawable/my_profile.xml" value="0.2905" />
         <entry key="app/src/main/res/layout/activity_age.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.18177083333333333" />
@@ -14,6 +16,7 @@
         <entry key="app/src/main/res/layout/fragment_search_news.xml" value="0.26685393258426965" />
         <entry key="app/src/main/res/layout/fragment_top_news.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/individual_age_items.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/individual_character_items.xml" value="0.22" />
         <entry key="app/src/main/res/layout/individual_item_movies.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/individual_item_news.xml" value="0.33" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.35625" />
