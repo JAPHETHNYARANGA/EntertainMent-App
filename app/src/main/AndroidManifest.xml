@@ -22,12 +22,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:theme="@style/Theme.EntertainmentApp"
             android:name=".News.Ui.MainActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.EntertainmentApp"
             android:name=".Age.Ui.AgeActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.EntertainmentApp"
             android:name=".Movies.Ui.MoviesActivity"
             android:exported="false" />
     </application>

@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.get_news -> startActivity(Intent(applicationContext, MainActivity::class.java))
                 R.id.get_movies -> startActivity(Intent(applicationContext, MoviesActivity::class.java))
                 R.id.get_age -> startActivity(Intent(applicationContext, AgeActivity::class.java))
+                R.id.nav_share -> sharereApp()
                 R.id.logout -> logout()
             }
 
