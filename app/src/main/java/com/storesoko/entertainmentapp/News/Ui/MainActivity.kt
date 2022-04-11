@@ -57,6 +57,20 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun sharereApp() {
+        val share = Intent.createChooser(Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.storesoko.entertainmentapp")
+            // (Optional) Here we're setting the title of the content
+            putExtra(Intent.EXTRA_TITLE, "Share Application")
+
+            // (Optional) Here we're passing a content URI to an image to be displayed
+            flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
+        }, null)
+        startActivity(share)
+
+    }
+
     private fun logout() {
         Firebase.auth.signOut()
         startActivity(Intent(applicationContext, LoginActivity::class.java))
